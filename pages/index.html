@@ -8,21 +8,26 @@
 </head>
 <body class="light-theme">
 
+  <!-- HEADER: Título centralizado; nav à esquerda em desktop; botão de tema à direita -->
   <header>
-    <h1>Valdir</h1>
-    <nav>
+    <!-- Título do site -->
+    <h1 id="siteTitle">Valdir</h1>
+
+    <!-- Nav principal (sempre visível; em telas pequenas fica abaixo do título sem usar hambúrguer) -->
+    <nav aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
       <a href="#contato">Contato</a>
     </nav>
 
-    <button id="toggleTheme">🌙</button>
+    <!-- Botão de tema: transparente, mostra apenas o emoji -->
+    <button id="toggleTheme" aria-pressed="false" aria-label="Alternar tema">🌙</button>
   </header>
 
-  <!-- FOTO -->
+  <!-- FOTO: o id 'profileImg' permite controlar o glow via CSS/JS -->
   <section class="foto">
-    <img src="/src/assets/imgs-i/Alberto estainho.png.jfif" alt="Foto de perfil">
-  </section>
+    <img id="profileImg" class="profile" src="/src/assets/imgs-i/Alberto estainho.png.jfif" alt="Foto de perfil">
+  </section> 
 
   <!-- SOBRE -->
   <section id="sobre">
@@ -54,9 +59,9 @@
   <br>
 
   <div class="contato-links">
-    <a href="#" target="_blank">GitHub</a>
-    <a href="#" target="_blank">LinkedIn</a>
-    <a href="mailto:seuemail@email.com">E-mail</a>
+    <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/github.svg" alt="GitHub">GitHub</a>
+    <a href="#" target="_blank"><img class="icon" src="/src/assets/icons/linkedin.svg" alt="LinkedIn">LinkedIn</a>
+    <a href="mailto:seuemail@email.com"><img class="icon" src="/src/assets/icons/email.svg" alt="E-mail">E-mail</a>
   </div>
 </section>
 
