@@ -41,14 +41,7 @@ section {
 }
 
 /* =======================
-   HEADER
-======================= */
-/* =======================
    HEADER (desktop + responsivo)
-   - Título centralizado
-   - Nav à esquerda no desktop
-   - Botão de tema à direita (transparente)
-   - Em telas pequenas, o nav fica abaixo do título (SEM hambúrguer)
 ======================= */
 header {
   background: var(--header);
@@ -87,7 +80,6 @@ nav a {
 
 /* =======================
    FOTO
-   - Removi a borda azul para que o glow seja aplicado apenas pelo contorno
 ======================= */
 .foto {
   display: flex;
@@ -267,4 +259,21 @@ a:hover::after {
 
 @media (max-width: 480px) {
   .contato-links { flex-direction: column; gap: 12px; }
+}
+
+/* RODAPÉ */
+.site-footer {
+  margin-top: 22px;
+  text-align: center;
+  color: var(--text);
+  opacity: 0.8;
+  padding: 12px 0;
+}
+.site-footer p {
+  margin: 0;
+}
+.site-footer small {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.85;
 }
